@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from edit2 import Ui_MainWindow
 
 
@@ -16,8 +16,6 @@ class Main(QMainWindow, Ui_MainWindow):
 if __name__ == "__main__":
     import sys
     app = QApplication(sys.argv)
-    MainWindow = QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
+    MainWindow = Main()
     MainWindow.show()
     sys.exit(app.exec_())
