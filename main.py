@@ -6,12 +6,10 @@ class Main(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setup()
-
-    def func(self):
         self.pushButton.clicked.connect(self.setup)
 
     def setup(self):
+        print("рррр")
         self.textBrowser.setText(self.plainTextEdit.toPlainText())
 
 
