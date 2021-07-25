@@ -9,7 +9,6 @@ class Main(QMainWindow, Ui_MainWindow):
         self.pushButton.clicked.connect(self.setup)
 
     def setup(self):
-        print("рррр")
         self.textBrowser.setText(self.plainTextEdit.toPlainText())
 
 
